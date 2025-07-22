@@ -22,9 +22,25 @@ cursor: pointer;
 transition:background-color 0.3s ease;
 }
 button:houver{
-background-color: rgb(15, 15, 15);
+background-color: rgb(255, 255, 255);
 }
 .agendamento{
 margin-top: 20px;
 border-top: 1px;
-padding-top: 1px solid #555;}
+padding-top: 1px solid black;}
+
+.profissional{
+background-color:red;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+width:30%;
+}
+.servico{
+background-color:red;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+width:30%;
+
+}

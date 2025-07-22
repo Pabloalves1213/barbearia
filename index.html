@@ -9,36 +9,50 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="styles.js">
+    
     <h1>Agendamento</h1>
     <label for="nome"> Nome</label>
     <input type="text" id="nome" placeholder="Seu nome">
 
-    <label for="nome"> Telefone</label>
-    <input type="text" id="nome" placeholder="Seu telefone">
+    <label for="telefone"> Telefone</label>
+    <input type="text" id="telefone" placeholder="Seu telefone">
+
+    <label for="cpf"> Cpf</label>
+    <input type="text" id="cpf" placeholder="Digite seu CPF">
 
     <form action="" method="get">
         <label for="datetime-local">Data e horas</label>
-        <input id="Data e Hora" type="datetime-local"><br>
-        <form action="Profissional" method="list"></form>
+        <input id="dataHora" type="datetime-local"><br>
+        
 
 
         <label for="datetime-local">Profissional</label>
 
 
-        <select id="profissional">
+        <select class="profissional"
+        id="profissional">
             <option value="">--Selecione</option>
             <option value="erick">Erick</option>
             <option value="vitor">Vitor</option>
         </select>
         </label>
+<label for="datetime-local">Serviços</label>
 
+
+        <select class="servico"
+        id="servico">
+            <option value="">--Selecione</option>
+            <option value="cabelo e barba">Cabelo e Barba</option>
+            <option value="barba">Barba</option>
+            <option value="cabelo">Cabelo</option>
+        </select>
+        </label>
     </form>
-    <button>Agendar</button>
+    <button onclick="agendar()">Agendar</button>
     <div class="Agendamento" id="listaAgendamentos">
         <h3>lista de Agendamentos</h3>
     </div>
-    <script src="scripts.js"></script>
+    <script src="teste2.js"></script>
 </body>
 
 </html>
